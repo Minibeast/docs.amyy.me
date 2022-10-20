@@ -33,6 +33,7 @@ Point is, this is very loose. Sorry.
    
    development/n64
    development/ootr
+   development/git
 
 .. toctree::
    :maxdepth: 1
