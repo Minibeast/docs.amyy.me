@@ -4,9 +4,7 @@ Ocarina of Time Randomizer is a rom hack of regular Ocarina
 of Time, which involves utilizing a combination of C and 
 Python to place items randomly throughout the world. The main 
 repository being used for development is managed by 
-`TestRunner <https://github.com/TestRunnerSRL/OoT-Randomizer>`_, 
-but a lot of heavy development is being managed by a repository 
-managed by `Roman971 <https://github.com/Roman971/OoT-Randomizer>`_.
+`TestRunner <https://github.com/TestRunnerSRL/OoT-Randomizer>`_.
 
 Compiling
 ---------------
