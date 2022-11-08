@@ -12,7 +12,7 @@ both a working copy and the origin, does not work very...
 intended. To get it working, I created a blank repository to 
 act as the origin, then made another folder (in ``/var/www``) 
 that cloned the folder (yes, Git will let you set an origin 
-to a path on the system directly. Cool!)
+to a path on the system directly).
 
 On the server, create a folder for the repository. Then create 
 a ``.git`` folder. Then, in that folder, run ``git init --bare``. 
@@ -28,4 +28,4 @@ created earlier.
 
 UPDATE: This probably isn't needed in actuality, the repository 
 can probably just exist without a ``.git`` folder. Keeping this 
-listed as its the current set up for the Docs repository.
+listed as it's the current set up for the Docs repository.
