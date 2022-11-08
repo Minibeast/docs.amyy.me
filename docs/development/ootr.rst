@@ -32,10 +32,13 @@ Once all of this is configured, run
 Running Python on macOS
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Everything works as described in the README, minus the GUI. 
-The GUI requires electron 4.x, which released in 2019. M1 Macs 
-began releasing publicly in late 2020. Oops. *Maybe* possible to 
-build this release from source for Apple Silicon? But frankly, the 
-real solution is to just update dependencies.
+As of writing, the GUI requires electron version 7.3.3. This 
+version does not have a proper release for Apple Silicon, meaing 
+during the setup process it cannot find an electron version for 
+7.3.3 built for ``darwin-arm64``. Could potentially compile this 
+electron version for macOS manually and go from there? Not sure. 
+Either way, does not work out of the box, and basic tinkering can't 
+seem to make it work either.
 
 Other than that, the CLI program works perfectly fine, at least 
 through what I've been testing.
