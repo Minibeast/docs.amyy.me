@@ -5,9 +5,14 @@ Git
 
 Setting up Git remote repository on Linux
 ------------------------------------------
-Making a Git remote repository is self-explanatory, although 
-one issue I did encounter was related to how Git reacts when 
-trying to switch branches to the one you're actually on.
+An important thing to note when setting up a "local" remote 
+repository is that a remote repository is different from a 
+local repository. A repository, while technically can work as 
+both a working copy and the origin, does not work very... 
+intended. To get it working, I created a blank repository to 
+act as the origin, then made another folder (in ``/var/www``) 
+that cloned the folder (yes, Git will let you set an origin 
+to a path on the system directly. Cool!)
 
 On the server, create a folder for the repository. Then create 
 a ``.git`` folder. Then, in that folder, run ``git init --bare``. 
@@ -21,11 +26,6 @@ add it to the ``.ssh/authorized_keys`` file). Important note:
 The "path to project" is the folder above the ``.git`` folder 
 created earlier.
 
-Once the local changes are pushed, the remote repository is not 
-completely set up yet. It expects the default branch to be 
-called ``master``, and if it's anything different it won't be 
-happy. Normally, this wouldn't be an issue, just checkout the 
-other branch (which will be there assuming it worked). However, 
-attempting to do so throws ``fatal: this operation must be run 
-in a work tree``. To fix this, run the checkout command with 
-the flag ``--work-tree=<path-to-project>``.
+UPDATE: This probably isn't needed in actuality, the repository 
+can probably just exist without a ``.git`` folder. Keeping this 
+listed as its the current set up for the Docs repository.
