@@ -29,6 +29,12 @@ Point is, this is very loose. Sorry.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Blogs
+
+   blogs/analyzer
+
+.. toctree::
+   :maxdepth: 1
    :caption: Development
    
    development/n64
